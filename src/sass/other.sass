@@ -1,0 +1,36 @@
+$bg1: #e3f1f9
+
+.other
+  display: flex
+  width: 756px
+  height: 296px
+  background-color: #e3f1f9
+  border: 8px solid #9cc5dc
+  padding: 32px
+  overflow: hidden
+
+  &__text
+    // border: 1px solid gold
+    flex-grow: 1
+
+  &__header
+    font-size: 32px
+
+  &__list
+    font-size: 28px
+
+  &__img-wrapper
+    // border: 1px solid purple
+    height: 100%
+
+  &__reflection
+    transform: rotate(180deg) scaleX(-1)
+    
+
+  &__reflectionOverlay
+    position: absolute
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    background: linear-gradient(to top, rgba(248, 236, 230, 0.6) 0%, $bg1 20%, $bg1 100%)
